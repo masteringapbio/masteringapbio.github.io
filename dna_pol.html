@@ -26,18 +26,17 @@
         <a-asset-item
           id="bowser"
           src="dna_pol.gltf"
-        >
-        </a-asset-item>
+        ></a-asset-item>
       </a-assets>
 
       <a-marker
-        preset="custom"
         type="pattern"
+        preset="custom"
+        url="marker_dna_pol.png"
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
         id="markerA"
-        url="marker_dna_pol.png">
       >
         <a-entity
           id="bowser-model"
@@ -46,8 +45,7 @@
           scale="0.025 0.025 0.025"
           class="clickable"
           gesture-handler
-        >
-        </a-entity>
+        ></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
